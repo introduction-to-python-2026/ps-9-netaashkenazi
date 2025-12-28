@@ -2,6 +2,7 @@
 
 import pandas as pd
 import seaborn as sns
+parkinsons= pd.read_csv('parkinsons.csv')
 y = parkinsons[ 'status']
 x = parkinsons[ ['PPE', 'DFA']]
 from sklearn.preprocessing import MinMaxScaler
